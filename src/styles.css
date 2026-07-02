@@ -1,0 +1,373 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft YaHei", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8fafc;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.icon-button {
+  @apply flex h-11 w-11 items-center justify-center rounded-md border border-slate-200 bg-white text-slate-900 shadow-sm transition hover:bg-slate-100 active:scale-95;
+}
+
+.command-button {
+  @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2 font-black text-slate-900 shadow-sm transition hover:bg-slate-100 active:scale-95;
+}
+
+.segmented-control {
+  @apply inline-flex rounded-md border border-slate-200 bg-slate-100 p-1 shadow-sm;
+}
+
+.segmented-control button {
+  @apply inline-flex min-h-9 items-center justify-center gap-2 rounded px-3 py-1 text-sm font-black text-slate-600 transition;
+}
+
+.segmented-control button.is-active {
+  @apply bg-white text-slate-950 shadow-sm;
+}
+
+.timer-control {
+  @apply inline-flex min-h-11 items-center gap-2 rounded-md border border-slate-200 bg-white px-2 font-black text-slate-900 shadow-sm;
+}
+
+.print-select {
+  @apply min-h-11 rounded-md border border-slate-200 bg-white px-3 font-black text-slate-900 shadow-sm;
+}
+
+.robot-device {
+  @apply mx-auto flex w-full max-w-[380px] flex-col items-center rounded-lg border-4 border-slate-900 bg-slate-950 p-4 text-white shadow-2xl;
+}
+
+.robot-head {
+  @apply mb-4 grid w-full grid-cols-2 gap-5 rounded-md bg-slate-800 p-4;
+}
+
+.robot-head span {
+  @apply h-8 rounded-full bg-cyan-300;
+}
+
+.robot-screen {
+  @apply flex aspect-square w-full max-w-[260px] items-center justify-center rounded-lg border-4 border-slate-700 bg-white text-slate-950;
+}
+
+.robot-controls {
+  @apply mt-4 grid w-full grid-cols-3 gap-3;
+}
+
+.robot-controls span {
+  @apply h-4 rounded-full bg-slate-600;
+}
+
+.print-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 24px;
+  background: white;
+  padding: 14mm;
+  box-shadow: 0 20px 70px rgba(15, 23, 42, 0.18);
+}
+
+.print-header {
+  border-bottom: 3px solid #111827;
+  padding-bottom: 14px;
+}
+
+.print-header p {
+  margin: 0 0 4px;
+  color: #0e7490;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.print-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.print-header span {
+  display: block;
+  margin-top: 8px;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.student-info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  gap: 10px;
+  margin: 16px 0;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.student-info-row span {
+  border-bottom: 2px solid #111827;
+  min-height: 30px;
+}
+
+.task-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.print-task-card,
+.print-section,
+.purchase-item,
+.purchase-qr {
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  break-inside: avoid;
+}
+
+.print-task-card h2,
+.print-section h2,
+.purchase-item h2,
+.purchase-qr h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.print-task-card .goal,
+.print-intro,
+.purchase-item p,
+.purchase-qr p {
+  color: #475569;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.print-task-card ol,
+.print-section ul,
+.purchase-item ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.check-line {
+  margin-top: 10px;
+  border-top: 1px dashed #94a3b8;
+  padding-top: 8px;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.print-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.print-footer {
+  margin-top: 18px;
+  border-top: 2px solid #111827;
+  padding-top: 12px;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.purchase-layout {
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.purchase-items {
+  display: grid;
+  gap: 10px;
+}
+
+.purchase-item strong {
+  color: #0e7490;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.purchase-qr {
+  text-align: center;
+}
+
+.purchase-qr span {
+  display: block;
+  margin-top: 10px;
+  word-break: break-all;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.promise-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.promise-row span {
+  border-radius: 8px;
+  background: #ecfeff;
+  padding: 10px;
+  color: #155e75;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.certificate-sheet {
+  width: 297mm;
+  min-height: 210mm;
+  padding: 16mm;
+}
+
+.certificate-box {
+  display: flex;
+  min-height: calc(210mm - 32mm);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 6px solid #111827;
+  padding: 16mm;
+  text-align: center;
+}
+
+.certificate-host {
+  margin: 0;
+  color: #0e7490;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.certificate-box h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.certificate-subtitle {
+  margin: 0;
+  color: #475569;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.certificate-name {
+  width: 70%;
+  border-bottom: 3px solid #111827;
+  padding: 18px 0 10px;
+  color: #111827;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.achievement-row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.achievement-row span {
+  border-radius: 8px;
+  background: #f1f5f9;
+  padding: 12px;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.certificate-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+@media (max-width: 900px) {
+  .print-page,
+  .certificate-sheet {
+    width: calc(100vw - 24px);
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .task-card-grid,
+  .print-section-grid,
+  .purchase-layout,
+  .promise-row,
+  .achievement-row {
+    grid-template-columns: 1fr;
+  }
+
+  .student-info-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  @page certificate {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  body {
+    background: white;
+  }
+
+  .screen-only {
+    display: none !important;
+  }
+
+  .print-page {
+    box-shadow: none;
+    margin: 0;
+    break-after: page;
+  }
+
+  .certificate-sheet {
+    page: certificate;
+  }
+}
