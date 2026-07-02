@@ -28,10 +28,10 @@
       "subtitle": "坐好、看桌面、先不要插线",
       "visual": "title",
       "accent": "cyan",
-      "timerSeconds": 240,
+      "timerSeconds": 180,
       "student": {
         "headline": "今天你是机器人训练师",
-        "summary": "等会儿要完成 4 件事：开机、联网、起名字、做展示。",
+        "summary": "等会儿要完成 5 件事：烧录、开机、联网、起名字、做展示。",
         "bullets": ["坐到自己的组", "拿好任务卡", "先观察不动手"],
         "activityTitle": "先做 3 件事",
         "activitySteps": ["写下姓名和组号", "看一眼桌上的机器人", "想一句想问机器人的话"],
@@ -39,14 +39,14 @@
         "callout": "先准备，再动手。"
       },
       "teacher": {
-        "estimatedMinutes": 4,
+        "estimatedMinutes": 3,
         "script": [
           "各位小朋友、各位家长，欢迎来到 OPC 亲子 AI 机器人唤醒营。今天我们不背公式，也不做复杂编程。",
           "今天只有一个目标：让孩子亲手把一台 AI 小机器人唤醒。孩子负责做决定和操作，家长负责安全、拍照和记录。",
           "两个小时以后，每组都要介绍自己的机器人：它叫什么、是什么性格、完成了什么挑战。"
         ],
         "actions": ["请每组确认桌面有任务卡、贴纸、数据线和机器人套件", "提醒家长坐在孩子侧后方，把正面操作空间留给孩子", "说明今天有作品展示和家长咨询时间"],
-        "notes": ["开场控制在 4 分钟内，不要讲技术背景", "先讲目标和角色，避免孩子一开始就乱插线"],
+        "notes": ["开场控制在 3 分钟内，不要讲技术背景", "先讲目标和角色，避免孩子一开始就乱插线"],
         "emergency": ["设备还没发齐：先让孩子写 3 个机器人候选名", "投屏异常：用口头开场，直接拿样机演示"]
       },
       "image": "/visuals/workshop-hero.png",
@@ -58,7 +58,7 @@
       "subtitle": "只观察：它什么时候听、什么时候说、什么时候变表情",
       "visual": "demo",
       "accent": "orange",
-      "timerSeconds": 360,
+      "timerSeconds": 300,
       "student": {
         "headline": "先看它能做什么",
         "summary": "找一找：声音从哪里进？回答从哪里出？表情在哪里变？",
@@ -69,7 +69,7 @@
         "callout": "先观察，再解释。"
       },
       "teacher": {
-        "estimatedMinutes": 6,
+        "estimatedMinutes": 5,
         "script": [
           "现在先请一台已经准备好的机器人出场。大家不用急着操作，先做观察员。",
           "老师说：小智，你醒了吗？机器人回答后停 3 秒，让孩子说它哪里变了。",
@@ -85,28 +85,28 @@
     },
     {
       "id": 3,
-      "title": "今天有 6 个任务",
+      "title": "今天有 8 个任务",
       "subtitle": "完成一关，再做下一关",
       "visual": "mission",
       "accent": "green",
-      "timerSeconds": 300,
+      "timerSeconds": 240,
       "student": {
         "headline": "按顺序通关",
         "summary": "不要抢跑。每完成一个任务，就在任务卡上打勾。",
-        "bullets": ["认识零件", "开机", "联网", "起名字", "选性格", "展示"],
+        "bullets": ["检查零件", "一键烧录", "开机", "联网", "AI 大脑", "起名字", "选性格", "展示"],
         "activityTitle": "角色分工",
         "activitySteps": ["孩子：负责操作", "家长：负责安全和拍照", "助教：负责帮忙排故"],
         "checkpoint": "你知道每一关要按顺序完成。",
         "callout": "慢一点，稳一点。"
       },
       "teacher": {
-        "estimatedMinutes": 5,
+        "estimatedMinutes": 4,
         "script": [
           "今天像游戏闯关，但每一关都有工程意义。",
           "我们不比谁最快。我们比谁更会观察、更会记录、更会把问题说清楚。",
-          "请家长帮孩子写好姓名和组号，后面每完成一关就在任务卡上打勾。"
+          "今天会多一个很重要的环节：一键烧录。孩子不用装驱动、配环境，只需要参与把唤醒程序装进机器人。"
         ],
-        "actions": ["带读 6 个任务名", "让家长填写任务卡上的姓名和组号", "强调完成一关再进入下一关"],
+        "actions": ["带读 8 个任务名", "让家长填写任务卡上的姓名和组号", "强调完成一关再进入下一关"],
         "notes": ["这页是控场页，后面有人乱问就回到通关地图", "明确家长角色，避免家长替孩子全做"],
         "emergency": ["分组混乱：按座位自然分组", "孩子年龄偏小：家长代写，孩子口述"]
       }
@@ -117,7 +117,7 @@
       "subtitle": "听见你 → 想一想 → 说出来 → 变表情",
       "visual": "systems",
       "accent": "cyan",
-      "timerSeconds": 360,
+      "timerSeconds": 300,
       "student": {
         "headline": "记住 4 个词",
         "summary": "耳朵听声音，AI 帮它想，喇叭说出来，屏幕显示表情。",
@@ -128,14 +128,14 @@
         "callout": "听、想、说、表情。"
       },
       "teacher": {
-        "estimatedMinutes": 6,
+        "estimatedMinutes": 5,
         "script": [
           "我们把机器人交流简化成四步：听见你、想一想、说出来、变表情。",
           "麦克风接收声音，语音识别把声音变成文字，AI 生成回答，喇叭和屏幕把结果表现出来。",
           "注意这句话要讲清楚：ESP32-S3 不是在本地跑一个巨大的 ChatGPT，它更像控制中心，复杂 AI 通常在云端、电脑或服务器里完成。"
         ],
         "actions": ["在样机上指认麦克风、屏幕、喇叭位置", "让孩子复述：听见、思考、说话、表情", "用一句话解释云端 AI，不展开底层协议"],
-        "notes": ["这是唯一需要稍微讲技术的页，不要扩展到 ASR/TTS/VAD 术语", "讲完立即进入实物检查"],
+        "notes": ["不要扩展到 ASR/TTS/VAD 术语", "讲完立即进入实物检查"],
         "emergency": ["孩子听不懂：只保留耳朵、嘴巴、脸、大脑四个词", "家长追问本地大模型：说明本课以联网 AI 互动为主"]
       },
       "image": "/visuals/materials/material-robot-structure.png",
@@ -147,7 +147,7 @@
       "subtitle": "这块小板子负责让零件一起工作",
       "visual": "chip",
       "accent": "yellow",
-      "timerSeconds": 300,
+      "timerSeconds": 240,
       "student": {
         "headline": "先认识 ESP32-S3",
         "summary": "拿起板子，找到这几个位置：供电口、屏幕、按键、连接线。",
@@ -158,7 +158,7 @@
         "callout": "先会找，再会用。"
       },
       "teacher": {
-        "estimatedMinutes": 5,
+        "estimatedMinutes": 4,
         "script": [
           "桌上的这块板子就是 ESP32-S3 机器人开发板。今天把它理解为机器人的控制中心。",
           "它负责把很多零件协调起来：电源、网络、麦克风、喇叭、屏幕，都要通过它配合。",
@@ -179,7 +179,7 @@
       "subtitle": "少一件先举手，不要急着插线",
       "visual": "parts",
       "accent": "cyan",
-      "timerSeconds": 480,
+      "timerSeconds": 420,
       "student": {
         "headline": "把材料排成一行",
         "summary": "听到口令后，指出对应零件。不要抢别人的零件。",
@@ -187,10 +187,10 @@
         "activityTitle": "零件点名",
         "activitySteps": ["把零件排好", "听老师口令", "指出对应零件", "在任务卡打勾"],
         "checkpoint": "你的材料已经检查完。",
-        "callout": "先检查，再开机。"
+        "callout": "先检查，再烧录。"
       },
       "teacher": {
-        "estimatedMinutes": 8,
+        "estimatedMinutes": 7,
         "script": [
           "现在正式进入动手。第一步不是插电，而是检查材料。",
           "请孩子把桌面上的材料排成一行。老师点到什么，孩子举起或指出什么。",
@@ -211,26 +211,57 @@
     },
     {
       "id": 7,
-      "title": "任务 2：第一次开机",
-      "subtitle": "插线后先等一等，观察变化",
+      "title": "任务 2：一键烧录",
+      "subtitle": "把唤醒程序装进机器人",
+      "visual": "chip",
+      "accent": "orange",
+      "timerSeconds": 600,
+      "student": {
+        "headline": "点击开始，等待完成",
+        "summary": "固件已经提前做好。你只需要确认设备、点击开始、看到完成。",
+        "bullets": ["插好数据线", "确认设备编号", "点击开始烧录", "看到完成提示"],
+        "activityTitle": "烧录四步",
+        "activitySteps": ["检查数据线", "确认设备编号", "点击开始烧录", "完成后举手"],
+        "checkpoint": "屏幕出现启动画面，或电脑显示烧录完成。",
+        "callout": "把程序装进去。"
+      },
+      "teacher": {
+        "estimatedMinutes": 10,
+        "script": [
+          "现在做一个很有仪式感的环节：一键烧录。烧录可以理解为把机器人的唤醒程序装进控制中心。",
+          "今天的固件已经提前做好，孩子不需要处理驱动、串口、编译和代码。孩子只参与确认设备、点击开始、等待完成。",
+          "烧录完成后，ESP32-S3 才知道怎么启动屏幕、连接外设、进入后面的互动流程。"
+        ],
+        "actions": ["确认烧录电脑、固件和一键烧录工具已经打开", "按组号分批烧录，每批不要太多", "烧录成功的组在白板上打勾", "烧录失败超过 2 分钟直接换线或换备用设备"],
+        "notes": ["这是体验环节，不是开发环境教学", "不要现场讲驱动安装、串口选择和编译细节", "必须提前准备已烧录好的备用设备"],
+        "emergency": ["识别不到设备：换线、换 USB 口、换电脑", "烧录失败：重试一次后换备用板", "全场排队过长：老师统一烧录，孩子继续填写名字候选"]
+      },
+      "image": "/visuals/materials/material-board-front.jpg",
+      "imageAlt": "一键烧录唤醒程序到 ESP32-S3 控制中心",
+      "imageFit": "contain"
+    },
+    {
+      "id": 8,
+      "title": "任务 3：第一次开机",
+      "subtitle": "烧录完成后，再让它启动",
       "visual": "power",
       "accent": "yellow",
-      "timerSeconds": 480,
+      "timerSeconds": 420,
       "student": {
-        "headline": "插线、看灯、等待",
-        "summary": "看亮灯、屏幕或提示音。先观察，不要连续按按钮。",
+        "headline": "看它有没有醒来",
+        "summary": "先看亮灯、屏幕或提示音。先观察，不要连续按按钮。",
         "bullets": ["插线", "看灯", "等 3 秒", "做记录"],
         "activityTitle": "开机四步",
         "activitySteps": ["孩子插线", "家长扶住板子", "亮灯后停 3 秒", "任务卡写下变化"],
         "checkpoint": "机器人出现亮灯、屏幕或提示音。",
-        "callout": "会等待，也是本事。"
+        "callout": "程序进去后，看它醒来。"
       },
       "teacher": {
-        "estimatedMinutes": 8,
+        "estimatedMinutes": 7,
         "script": [
           "现在进入第一次开机。请所有人跟着老师口令，不要抢跑。",
-          "第一步拿线，第二步对准接口，第三步插入，第四步观察。",
-          "插线后不要马上说失败。很多设备需要几秒钟启动。先看供电，再看状态灯，再看屏幕。"
+          "烧录完成以后，机器人还需要真正启动。插线后先观察，不要连续按复位键。",
+          "很多设备需要几秒钟启动。先看供电，再看状态灯，再看屏幕。"
         ],
         "actions": ["分步骤口令：拿线、对准、插入、观察", "让成功开机的小组安静举手，助教记录", "提醒家长拍下孩子第一次开机的画面"],
         "notes": ["老师和助教沿走道巡查插口方向", "不要把板子放在金属物上"],
@@ -241,8 +272,8 @@
       "imageFit": "contain"
     },
     {
-      "id": 8,
-      "title": "任务 3：连接网络",
+      "id": 9,
+      "title": "任务 4：连接网络",
       "subtitle": "失败就举手，不要乱点",
       "visual": "cloud",
       "accent": "green",
@@ -271,12 +302,42 @@
       "imageAlt": "AI 桌宠机器人连接云端 AI 大脑"
     },
     {
-      "id": 9,
-      "title": "任务 4：给它起名字",
+      "id": 10,
+      "title": "多模态 AI 大脑",
+      "subtitle": "不只听声音，还能看画面、读文字、记任务",
+      "visual": "systems",
+      "accent": "cyan",
+      "timerSeconds": 360,
+      "student": {
+        "headline": "AI 大脑会接收很多信息",
+        "summary": "声音、图片、文字、任务状态，都可以变成机器人思考的线索。",
+        "bullets": ["听声音", "看画面", "读文字", "记任务"],
+        "activityTitle": "想一想",
+        "activitySteps": ["只听声音能知道什么", "看到画面能多知道什么", "有任务目标会怎么回答", "说出一个升级想法"],
+        "checkpoint": "你知道多模态不是一个功能，而是多种信息一起进入 AI 大脑。",
+        "callout": "听、看、读、记。"
+      },
+      "teacher": {
+        "estimatedMinutes": 6,
+        "script": [
+          "现在讲今天的核心概念：多模态 AI 大脑。多模态不是复杂词，意思是 AI 不只看一种信息。",
+          "普通语音机器人主要听声音。多模态机器人可以把声音、图像、文字、传感器状态和当前任务放在一起判断。",
+          "今天我们先体验语音和表情。后续可以升级摄像头、人脸识别、手势识别、情绪识别和家庭任务。"
+        ],
+        "actions": ["用投屏图解释声音、画面、文字、任务四类信息", "让孩子说一个如果机器人能看见你，它可以多做什么", "把家长注意力引到后续课程和升级路径"],
+        "notes": ["学生屏只讲听、看、读、记，不讲 Transformer、embedding、VLM", "这是产品价值页，不要变成模型原理课"],
+        "emergency": ["孩子听不懂：改成耳朵、眼睛、文字、任务四个词", "时间不足：只讲一句，多种信息一起给 AI 大脑"]
+      },
+      "image": "/visuals/materials/material-robot-structure.png",
+      "imageAlt": "多模态 AI 大脑接收声音、画面、文字和任务信息"
+    },
+    {
+      "id": 11,
+      "title": "任务 5：给它起名字",
       "subtitle": "名字短一点，叫起来清楚一点",
       "visual": "name",
       "accent": "orange",
-      "timerSeconds": 420,
+      "timerSeconds": 360,
       "student": {
         "headline": "它叫什么，由你决定",
         "summary": "写 3 个名字，选一个最喜欢的，贴到任务卡上。",
@@ -287,7 +348,7 @@
         "callout": "名字就是它的身份。"
       },
       "teacher": {
-        "estimatedMinutes": 7,
+        "estimatedMinutes": 6,
         "script": [
           "现在机器人已经能回应了，我们给它一个身份。",
           "请每组写 3 个候选名字。名字不用很酷，最重要是叫起来清楚。",
@@ -299,12 +360,12 @@
       }
     },
     {
-      "id": 10,
-      "title": "任务 5：选择性格",
+      "id": 12,
+      "title": "任务 6：选择性格",
       "subtitle": "让机器人换一种说话方式",
       "visual": "personality",
       "accent": "red",
-      "timerSeconds": 420,
+      "timerSeconds": 360,
       "student": {
         "headline": "选一张性格卡",
         "summary": "选一个你喜欢的说话风格，再让机器人介绍自己。",
@@ -315,7 +376,7 @@
         "callout": "性格会改变说话风格。"
       },
       "teacher": {
-        "estimatedMinutes": 7,
+        "estimatedMinutes": 6,
         "script": [
           "AI 机器人有趣的地方在于，同样的问题可以用不同风格回答。",
           "我们今天不讲复杂提示词，只体验一件事：你怎样描述角色，机器人就会更像那个角色。",
@@ -327,12 +388,12 @@
       }
     },
     {
-      "id": 11,
-      "title": "任务 6：三次调试挑战",
+      "id": 13,
+      "title": "任务 7：三次调试挑战",
       "subtitle": "第一次不完美没关系，第二次说得更清楚",
       "visual": "challenge",
       "accent": "yellow",
-      "timerSeconds": 900,
+      "timerSeconds": 780,
       "student": {
         "headline": "选一个挑战来完成",
         "summary": "每次只改一个地方。看看机器人回答会不会变好。",
@@ -343,7 +404,7 @@
         "callout": "会改问题，才会用 AI。"
       },
       "teacher": {
-        "estimatedMinutes": 15,
+        "estimatedMinutes": 13,
         "script": [
           "现在进入挑战任务。每组只需要选一个挑战，不需要全部做完。",
           "请记住三次调试：第一次看结果，第二次把问题说清楚，第三次加入名字和性格。",
@@ -355,12 +416,12 @@
       }
     },
     {
-      "id": 12,
+      "id": 14,
       "title": "作品展示",
       "subtitle": "说清楚：它叫什么、会做什么、你改了什么",
       "visual": "showcase",
       "accent": "cyan",
-      "timerSeconds": 600,
+      "timerSeconds": 480,
       "student": {
         "headline": "60 秒介绍你的机器人",
         "summary": "不用追求完美。能讲清楚过程，就已经完成展示。",
@@ -371,7 +432,7 @@
         "callout": "把过程讲出来。"
       },
       "teacher": {
-        "estimatedMinutes": 10,
+        "estimatedMinutes": 8,
         "script": [
           "现在做作品展示。今天不是比赛，重点是看见每组机器人有什么不同。",
           "每组 60 秒，结构很简单：机器人叫什么，选择了什么性格，完成了哪个挑战，调试时改进了什么。",
@@ -383,12 +444,12 @@
       }
     },
     {
-      "id": 13,
+      "id": 15,
       "title": "回家继续升级",
       "subtitle": "今天只是第一次唤醒，下一次可以让它更厉害",
       "visual": "home",
       "accent": "green",
-      "timerSeconds": 420,
+      "timerSeconds": 360,
       "student": {
         "headline": "给机器人一个新任务",
         "summary": "回家后可以继续设计：新表情、新问题、新任务。",
@@ -399,7 +460,7 @@
         "callout": "今天唤醒，回家升级。"
       },
       "teacher": {
-        "estimatedMinutes": 7,
+        "estimatedMinutes": 6,
         "script": [
           "今天孩子完成的是第一阶段：唤醒机器人。",
           "真正的价值不是今天问了几个问题，而是回家后继续升级：故事、英语、表情、传感器、家庭任务。",
@@ -411,12 +472,12 @@
       }
     },
     {
-      "id": 14,
+      "id": 16,
       "title": "合影、领奖、带走任务卡",
       "subtitle": "孩子领取证书，家长登记后续资料",
       "visual": "home",
       "accent": "orange",
-      "timerSeconds": 480,
+      "timerSeconds": 300,
       "student": {
         "headline": "你完成了机器人训练师任务",
         "summary": "拿好任务卡，和机器人合影。回家继续升级。",
@@ -427,7 +488,7 @@
         "callout": "今天任务完成。"
       },
       "teacher": {
-        "estimatedMinutes": 8,
+        "estimatedMinutes": 5,
         "script": [
           "最后给家长 5 分钟说明。今天孩子不是在玩普通玩具，而是在理解智能设备的基本结构：感知、连接、控制和 AI 大脑。",
           "我们不要求孩子一开始会写复杂代码，而是先建立一种信心：我可以创造一台会互动的智能设备。",
