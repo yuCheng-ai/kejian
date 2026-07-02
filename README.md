@@ -2,6 +2,21 @@
 
 静态 Vite + React + TypeScript + TailwindCSS 课件，用于 2 小时 OPC 社区亲子 AI 机器人沙龙。
 
+## 当前课程版本
+
+本版已经按现场执行做过一次收敛：
+
+- 课程从原 16 页压缩为 14 页。
+- 老师讲授与活动合计约 108 分钟，预留约 12 分钟给联网故障、孩子展示、家长咨询和成交转化。
+- 学生/投屏视图改为“大标题 + 任务步骤 + 过关标准”，减少投屏文字密度。
+- 老师视图保留讲稿、现场动作、注意事项、故障应急。
+- 第 13-14 页用于家长价值说明、报名登记、购买转化和作品上传。
+
+上线前必须替换 `src/data/course.json` 里的二维码占位链接：
+
+- `https://example.com/replace-opc-signup`
+- `https://example.com/replace-opc-showcase`
+
 ## 启动
 
 ```bash
