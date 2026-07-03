@@ -47,7 +47,7 @@ function StudentCommandDeck({
       <aside className="student-command-rail">
         <div className="student-command-brand">
           <span>AI 桌宠</span>
-          <strong>任务控制台</strong>
+          <strong>闯关地图</strong>
         </div>
         <ol className="student-command-stages">
           {stages.map((item) => (
@@ -62,22 +62,20 @@ function StudentCommandDeck({
       <main className="student-command-main">
         <header className="student-command-topbar">
           <div>
-            <span>当前关卡</span>
-            <strong>
-              第 {slide.id} 关 / 共 {totalSlides} 关
-            </strong>
-          </div>
-          <div>
-            <span>现场任务</span>
+            <span>AI 桌宠唤醒营</span>
             <strong>{slide.student.activityTitle}</strong>
+          </div>
+          <div className="student-command-progress">
+            {String(slide.id).padStart(2, "0")}
+            <span>/ {String(totalSlides).padStart(2, "0")}</span>
           </div>
         </header>
 
         <div className="student-command-grid">
           <section className="student-command-content">
             <div className="student-command-title">
-              <span>{slide.subtitle}</span>
-              <h1>{slide.title}</h1>
+              <span>{slide.student.callout}</span>
+              <h1>{getStageTitle(slide.title)}</h1>
               <p>{slide.student.headline}</p>
             </div>
 
@@ -118,7 +116,7 @@ function StudentCommandDeck({
         <footer className="student-command-pass">
           <div>
             <Flag aria-hidden="true" size={28} />
-            <span>通关条件</span>
+            <span>通关小目标</span>
           </div>
           <strong>{slide.student.checkpoint}</strong>
         </footer>

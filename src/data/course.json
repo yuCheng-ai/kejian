@@ -10,28 +10,28 @@
     {
       "id": 1,
       "title": "第 1 关：认识 AI 桌宠",
-      "subtitle": "它会听、会看、会说，还会显示表情",
+      "subtitle": "它会听、会看、会说，还会做表情",
       "visual": "systems",
       "accent": "cyan",
       "timerSeconds": 600,
       "student": {
-        "headline": "先知道它为什么像小伙伴",
-        "summary": "AI 桌宠不是玩具摆件，它有身体、感官和 AI 大脑。",
+        "headline": "它为什么像一个小伙伴？",
+        "summary": "它有眼睛、耳朵、嘴巴和小脑袋，可以听你说话，也可以回答你。",
         "bullets": [
           "身体：屏幕和外壳",
           "耳朵：麦克风",
           "眼睛：摄像头",
           "嘴巴：喇叭"
         ],
-        "activityTitle": "科普小任务",
+        "activityTitle": "认识小伙伴",
         "activitySteps": [
           "看老师演示",
-          "说出它怎么听",
-          "说出它怎么看",
-          "说出它怎么回答"
+          "找找它的耳朵",
+          "找找它的眼睛",
+          "听听它怎么回答"
         ],
-        "checkpoint": "你能说出 AI 桌宠至少 2 个能力。",
-        "callout": "先认识，再训练。"
+        "checkpoint": "你能说出它的 2 个小本领。",
+        "callout": "先认识小伙伴。"
       },
       "teacher": {
         "estimatedMinutes": 10,
@@ -62,31 +62,31 @@
     },
     {
       "id": 2,
-      "title": "第 2 关：观察真实物料",
+      "title": "第 2 关：认识小零件",
       "subtitle": "找到屏幕、摄像头、麦克风、喇叭和接口",
       "visual": "parts",
       "accent": "green",
       "timerSeconds": 720,
       "student": {
-        "headline": "把桌宠拆成几个能看懂的部分",
-        "summary": "先观察，再动手。找到每个部分，后面才知道哪里不能乱碰。",
+        "headline": "桌宠身体里藏着什么？",
+        "summary": "先用眼睛找一找。找到这些小零件，后面动手就不慌。",
         "bullets": [
           "屏幕",
           "摄像头",
           "麦克风",
           "喇叭",
-          "Type-C 接口",
+          "充电口",
           "外壳"
         ],
-        "activityTitle": "观察清单",
+        "activityTitle": "找零件",
         "activitySteps": [
-          "把材料排整齐",
-          "找到摄像头和屏幕",
-          "找到喇叭孔和麦克风",
-          "找到 Type-C 接口"
+          "把材料摆整齐",
+          "找到屏幕",
+          "找到小镜头",
+          "找到插线口"
         ],
-        "checkpoint": "你能指出至少 4 个真实部件。",
-        "callout": "先观察，再上手。"
+        "checkpoint": "你能指出 4 个小零件。",
+        "callout": "先找一找。"
       },
       "teacher": {
         "estimatedMinutes": 12,
@@ -126,29 +126,29 @@
     },
     {
       "id": 3,
-      "title": "第 3 关：准备烧录",
+      "title": "第 3 关：准备装程序",
       "subtitle": "确认组号、接口和数据线，等老师口令",
       "visual": "chip",
       "accent": "orange",
       "timerSeconds": 480,
       "student": {
-        "headline": "先准备好，别急着点开始",
-        "summary": "烧录是把唤醒程序装进机器人。跟着老师做，失败就举手。",
+        "headline": "先排好队，别急着点",
+        "summary": "我们要把小程序装进桌宠。听老师口令，一步一步来。",
         "bullets": [
-          "确认组号",
-          "检查数据线",
-          "找到 Type-C",
-          "等老师口令"
+          "看组号",
+          "检查线",
+          "找插口",
+          "等口令"
         ],
-        "activityTitle": "准备动作",
+        "activityTitle": "准备出发",
         "activitySteps": [
-          "确认自己的组号",
-          "检查数据线插好",
-          "找到老师指定页面",
-          "手离开鼠标等口令"
+          "看自己的组号",
+          "拿好数据线",
+          "找到插线口",
+          "小手等一等"
         ],
-        "checkpoint": "你准备好了数据线、组号和接口。",
-        "callout": "先准备，再烧录。"
+        "checkpoint": "你已经准备好线、组号和插口。",
+        "callout": "先准备好。"
       },
       "teacher": {
         "estimatedMinutes": 8,
@@ -178,29 +178,29 @@
     },
     {
       "id": 4,
-      "title": "第 4 关：装入程序并唤醒",
+      "title": "第 4 关：叫醒小桌宠",
       "subtitle": "看到完成，再插线开机，等 3 秒",
       "visual": "power",
       "accent": "yellow",
       "timerSeconds": 900,
       "student": {
-        "headline": "让它第一次醒来",
-        "summary": "点击开始后安静等待。完成后插线开机，看它出现第一个反应。",
+        "headline": "它要第一次醒来了",
+        "summary": "点一下开始，然后安静等。完成后插线，看它给你的第一个反应。",
         "bullets": [
           "点击开始",
           "看到完成",
           "插线开机",
-          "记录变化"
+          "发现变化"
         ],
-        "activityTitle": "唤醒步骤",
+        "activityTitle": "叫醒步骤",
         "activitySteps": [
           "点击开始",
-          "看到完成后举手",
-          "插线后等 3 秒",
+          "看到完成就举手",
+          "插线后数 3 秒",
           "写下第一个变化"
         ],
-        "checkpoint": "机器人出现亮灯、屏幕、提示音或启动画面。",
-        "callout": "今天第一次醒来。"
+        "checkpoint": "它亮了、响了，或者屏幕动起来了。",
+        "callout": "准备叫醒它。"
       },
       "teacher": {
         "estimatedMinutes": 15,
@@ -231,29 +231,29 @@
     },
     {
       "id": 5,
-      "title": "第 5 关：第一次对话",
+      "title": "第 5 关：说第一句话",
       "subtitle": "联网后只说一句短话",
       "visual": "cloud",
       "accent": "green",
       "timerSeconds": 720,
       "student": {
-        "headline": "让它回答你一句话",
-        "summary": "连接成功后，说：你好，请介绍自己。听到回答后记一个关键词。",
+        "headline": "和它打个招呼",
+        "summary": "轮到你时，说一句短短的话。听到回答后，记下一个你喜欢的词。",
         "bullets": [
-          "连上网络",
+          "连上网",
           "等提示",
-          "说短句",
-          "记关键词"
+          "说短话",
+          "记一个词"
         ],
-        "activityTitle": "第一次问候",
+        "activityTitle": "第一次打招呼",
         "activitySteps": [
-          "确认网络连接",
-          "等待老师点名测试",
+          "看看是否连上网",
+          "轮到我们再说",
           "说：你好，请介绍自己",
-          "写下一个关键词"
+          "写下一个好玩的词"
         ],
-        "checkpoint": "机器人听到你，并完成一次回答。",
-        "callout": "短一点，清楚一点。"
+        "checkpoint": "它听到你，并回答了一次。",
+        "callout": "说短一点。"
       },
       "teacher": {
         "estimatedMinutes": 12,
@@ -289,23 +289,23 @@
       "accent": "orange",
       "timerSeconds": 480,
       "student": {
-        "headline": "它叫什么，由你决定",
-        "summary": "名字让机器人从设备变成你的作品。先写 3 个，再选 1 个。",
+        "headline": "给它一个专属名字",
+        "summary": "有了名字，它就更像你的朋友。先想 3 个，再选最喜欢的 1 个。",
         "bullets": [
-          "2-4 个字",
+          "2 到 4 个字",
           "容易叫",
           "有特点",
           "贴到任务卡"
         ],
-        "activityTitle": "命名步骤",
+        "activityTitle": "取名字",
         "activitySteps": [
           "写下 3 个候选名字",
-          "选出最终名字",
+          "圈出最喜欢的",
           "贴到任务卡上",
-          "对机器人说出它的新名字"
+          "叫它一声新名字"
         ],
-        "checkpoint": "你的机器人有了名字。",
-        "callout": "名字就是身份。"
+        "checkpoint": "你的桌宠有了自己的名字。",
+        "callout": "名字很重要。"
       },
       "teacher": {
         "estimatedMinutes": 8,
@@ -335,29 +335,29 @@
     },
     {
       "id": 7,
-      "title": "第 7 关：选择性格和任务",
-      "subtitle": "选一个性格，完成一个稳定小任务",
+      "title": "第 7 关：选择小性格",
+      "subtitle": "选一个性格，学会一个小本领",
       "visual": "personality",
       "accent": "red",
       "timerSeconds": 780,
       "student": {
-        "headline": "让它用你的风格说话",
-        "summary": "选一个性格，再给它一个小任务。成功一次就可以展示。",
+        "headline": "让它变成你的风格",
+        "summary": "选一个小性格，再让它学会一个小本领。成功一次就可以展示。",
         "bullets": [
           "探险家",
           "小老师",
           "守护者",
           "生活助手"
         ],
-        "activityTitle": "训练步骤",
+        "activityTitle": "学本领",
         "activitySteps": [
-          "选择一个性格",
-          "选择一个小任务",
-          "让机器人回答一次",
-          "写下最喜欢的一句话"
+          "选一个小性格",
+          "选一个小本领",
+          "让它回答一次",
+          "记下喜欢的一句话"
         ],
-        "checkpoint": "机器人能用新性格完成一个小任务。",
-        "callout": "稳定完成一次。"
+        "checkpoint": "它能用新性格完成一个小本领。",
+        "callout": "学会一个本领。"
       },
       "teacher": {
         "estimatedMinutes": 13,
@@ -387,29 +387,29 @@
     },
     {
       "id": 8,
-      "title": "第 8 关：选择 3D 打印外观",
+      "title": "第 8 关：给它选新衣",
       "subtitle": "给桌宠选颜色、耳朵、支架和名字牌",
       "visual": "showcase",
       "accent": "cyan",
       "timerSeconds": 600,
       "student": {
-        "headline": "设计它的外观方案",
-        "summary": "现场先选方案，后续可以打印外壳、名字牌和小配件。",
+        "headline": "让它长得更像你的作品",
+        "summary": "先选颜色、小耳朵、支架和名字牌，后面就能做出专属外壳。",
         "bullets": [
           "外壳颜色",
-          "耳朵形状",
-          "支架样式",
+          "小耳朵",
+          "小支架",
           "名字牌"
         ],
-        "activityTitle": "外观选择",
+        "activityTitle": "选新衣",
         "activitySteps": [
           "选一个外壳颜色",
-          "选一个耳朵或支架",
+          "选一个小耳朵",
           "写下名字牌文字",
           "在任务卡上打勾"
         ],
-        "checkpoint": "你完成了自己的 3D 打印外观方案。",
-        "callout": "让它长得像你的作品。"
+        "checkpoint": "你给桌宠选好了专属新衣。",
+        "callout": "给它选新衣。"
       },
       "teacher": {
         "estimatedMinutes": 10,
@@ -439,29 +439,29 @@
     },
     {
       "id": 9,
-      "title": "第 9 关：展示和领奖",
+      "title": "第 9 关：上台亮相",
       "subtitle": "60 秒介绍你的 AI 桌宠",
       "visual": "home",
       "accent": "green",
       "timerSeconds": 780,
       "student": {
-        "headline": "带走证书、任务卡和新想法",
-        "summary": "把过程讲清楚，就是完成作品展示。",
+        "headline": "介绍你的 AI 小伙伴",
+        "summary": "说清楚它的名字、性格、本领和新衣，就完成展示啦。",
         "bullets": [
           "它叫什么",
           "它是什么性格",
-          "它完成了什么任务",
-          "它选了什么外观"
+          "它学会的小本领",
+          "它选的新衣"
         ],
-        "activityTitle": "展示顺序",
+        "activityTitle": "亮相顺序",
         "activitySteps": [
           "介绍名字",
           "介绍性格",
-          "说完成的任务",
-          "说外观方案"
+          "说它的小本领",
+          "说它的新衣"
         ],
-        "checkpoint": "你完成了作品展示，并带走证书和任务卡。",
-        "callout": "今天通关完成。"
+        "checkpoint": "你完成亮相，可以带走证书和任务卡。",
+        "callout": "准备亮相。"
       },
       "teacher": {
         "estimatedMinutes": 13,
