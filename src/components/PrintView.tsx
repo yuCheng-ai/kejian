@@ -1,5 +1,4 @@
 import { ArrowLeft, Printer } from "lucide-react";
-import { QRCodeSVG } from "qrcode.react";
 import type { CourseData, PrintablesData, PrintKind } from "../types";
 
 interface PrintViewProps {
@@ -13,11 +12,10 @@ interface PrintViewProps {
 const printLabels: Record<PrintKind, string> = {
   tasks: "学生任务卡",
   parents: "家长说明页",
-  purchase: "购买页",
   certificate: "证书",
 };
 
-const printOptions: PrintKind[] = ["tasks", "parents", "purchase", "certificate"];
+const printOptions: PrintKind[] = ["tasks", "parents", "certificate"];
 
 function PrintToolbar({ kind, onChangeKind, onClose }: PrintViewProps) {
   return (
@@ -107,52 +105,6 @@ function ParentGuide({ course, data }: { course: CourseData; data: PrintablesDat
   );
 }
 
-function PurchasePage({ course, data }: { course: CourseData; data: PrintablesData }) {
-  const kitLink = course.meta.qrLinks[0];
-
-  return (
-    <div className="print-page">
-      <header className="print-header">
-        <p>{course.meta.host}</p>
-        <h1>{data.purchasePage.title}</h1>
-        <span>{course.meta.subtitle}</span>
-      </header>
-
-      <div className="purchase-layout">
-        <div>
-          <p className="print-intro">{data.purchasePage.intro}</p>
-          <div className="purchase-items">
-            {data.purchasePage.items.map((item) => (
-              <article className="purchase-item" key={item.name}>
-                <h2>{item.name}</h2>
-                <p>{item.fit}</p>
-                <ul>
-                  {item.includes.map((included) => (
-                    <li key={included}>{included}</li>
-                  ))}
-                </ul>
-                <strong>{item.nextStep}</strong>
-              </article>
-            ))}
-          </div>
-        </div>
-        <aside className="purchase-qr">
-          <QRCodeSVG value={kitLink.url} size={190} />
-          <h2>{kitLink.label}</h2>
-          <p>{kitLink.description}</p>
-          <span>{kitLink.url}</span>
-        </aside>
-      </div>
-
-      <div className="promise-row">
-        {data.purchasePage.promise.map((promise) => (
-          <span key={promise}>{promise}</span>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function Certificate({ course, data }: { course: CourseData; data: PrintablesData }) {
   return (
     <div className="print-page certificate-sheet">
@@ -190,10 +142,6 @@ function PrintableContent({
 
   if (kind === "parents") {
     return <ParentGuide course={course} data={data} />;
-  }
-
-  if (kind === "purchase") {
-    return <PurchasePage course={course} data={data} />;
   }
 
   return <Certificate course={course} data={data} />;

@@ -3,7 +3,6 @@ import courseJson from "./data/course.json";
 import printablesJson from "./data/printables.json";
 import { DeckControls } from "./components/DeckControls";
 import { PrintView } from "./components/PrintView";
-import { QrPage } from "./components/QrPage";
 import { StudentView } from "./components/StudentView";
 import { TeacherView } from "./components/TeacherView";
 import type { CourseData, PrintablesData, PrintKind, SyncStatus, ViewMode } from "./types";
@@ -40,7 +39,6 @@ function getInitialPrintKind(): PrintKind | null {
   const value = new URLSearchParams(window.location.search).get("print");
   return value === "tasks" ||
     value === "parents" ||
-    value === "purchase" ||
     value === "certificate"
     ? value
     : null;
@@ -133,9 +131,6 @@ export default function App() {
   const [slideIndex, setSlideIndex] = useState(getInitialSlideIndex);
   const [mode, setMode] = useState<ViewMode>(getInitialMode);
   const [printKind, setPrintKind] = useState<PrintKind | null>(getInitialPrintKind);
-  const [showQrPage, setShowQrPage] = useState(
-    new URLSearchParams(window.location.search).get("view") === "qr",
-  );
   const [isFullscreen, setIsFullscreen] = useState(Boolean(document.fullscreenElement));
   const [syncStatus, setSyncStatus] = useState<SyncStatus>("connecting");
 
@@ -176,11 +171,11 @@ export default function App() {
 
       setSlideIndex(nextSlideIndex);
 
-      if (mode === "teacher" && !printKind && !showQrPage) {
+      if (mode === "teacher" && !printKind) {
         publishSlideId(nextSlide.id);
       }
     },
-    [mode, printKind, publishSlideId, showQrPage, totalSlides],
+    [mode, printKind, publishSlideId, totalSlides],
   );
 
   const goPrevious = useCallback(() => goToSlide(slideIndex - 1), [goToSlide, slideIndex]);
@@ -205,7 +200,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (printKind || showQrPage) {
+    if (printKind) {
       return;
     }
 
@@ -216,10 +211,10 @@ export default function App() {
     url.searchParams.delete("view");
     url.hash = "";
     window.history.replaceState(null, "", `${url.pathname}${url.search}`);
-  }, [mode, printKind, showQrPage]);
+  }, [mode, printKind]);
 
   useEffect(() => {
-    if (printKind || showQrPage) {
+    if (printKind) {
       setSyncStatus("disconnected");
       return undefined;
     }
@@ -288,7 +283,7 @@ export default function App() {
       disposed = true;
       closeSocket();
     };
-  }, [applySlideId, printKind, publishSlideId, showQrPage]);
+  }, [applySlideId, printKind, publishSlideId]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -301,16 +296,12 @@ export default function App() {
 
       if (event.key === "ArrowRight" || event.key === "PageDown") {
         event.preventDefault();
-        if (mode === "teacher") {
-          goNext();
-        }
+        goNext();
       }
 
       if (event.key === "ArrowLeft" || event.key === "PageUp") {
         event.preventDefault();
-        if (mode === "teacher") {
-          goPrevious();
-        }
+        goPrevious();
       }
 
       if (event.key.toLowerCase() === "f") {
@@ -321,7 +312,7 @@ export default function App() {
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [goNext, goPrevious, mode, toggleFullscreen]);
+  }, [goNext, goPrevious, toggleFullscreen]);
 
   const modeLabel = useMemo(() => (mode === "teacher" ? "老师视图" : "学生视图"), [mode]);
 
@@ -337,10 +328,6 @@ export default function App() {
     );
   }
 
-  if (showQrPage) {
-    return <QrPage course={course} onBack={() => setShowQrPage(false)} />;
-  }
-
   return (
     <main className="min-h-screen bg-paper text-ink">
       {mode === "teacher" ? (
@@ -354,7 +341,6 @@ export default function App() {
           onNext={goNext}
           onPrevious={goPrevious}
           onPrint={setPrintKind}
-          onQrPage={() => setShowQrPage(true)}
           onResetTimer={countdown.reset}
           onToggleFullscreen={toggleFullscreen}
           onToggleTimer={() => {
@@ -372,13 +358,12 @@ export default function App() {
 
       {mode === "teacher" ? (
         <TeacherView
-          course={course}
           countdown={countdown}
           slide={activeSlide}
           totalSlides={totalSlides}
         />
       ) : (
-        <StudentView course={course} slide={activeSlide} totalSlides={totalSlides} />
+        <StudentView allSlides={course.slides} slide={activeSlide} totalSlides={totalSlides} />
       )}
     </main>
   );

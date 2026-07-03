@@ -29,8 +29,7 @@ import {
   Wrench,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { QRCodeSVG } from "qrcode.react";
-import type { CourseSlide, QrLink } from "../types";
+import type { CourseSlide } from "../types";
 
 interface RobotVisualProps {
   accent: CourseSlide["accent"];
@@ -40,7 +39,6 @@ interface RobotVisualProps {
   imageAlt?: string;
   imageFit?: CourseSlide["imageFit"];
   imageSource?: string;
-  qrLinks?: QrLink[];
   supportImages?: CourseSlide["supportImages"];
   visual: string;
 }
@@ -90,18 +88,18 @@ const visualMap: Record<string, VisualConfig> = {
   mission: {
     icon: Map,
     label: "闯关路线",
-    status: "6 个任务",
+    status: "8 个任务",
     chips: ["检查", "开机", "展示"],
   },
   systems: {
     icon: Brain,
-    label: "三系统",
-    status: "协同工作",
-    chips: ["身体", "感官", "大脑"],
+    label: "AI 线索",
+    status: "正在判断",
+    chips: ["声音", "画面", "文字", "任务"],
   },
   chip: {
     icon: Cpu,
-    label: "ESP32-S3",
+    label: "控制中心",
     status: "控制中心",
     chips: ["Wi-Fi", "音频", "屏幕"],
   },
@@ -169,7 +167,7 @@ const visualMap: Record<string, VisualConfig> = {
     icon: Home,
     label: "继续升级",
     status: "带回家",
-    chips: ["套装", "课程", "作品"],
+    chips: ["证书", "任务卡", "升级"],
   },
 };
 
@@ -200,13 +198,14 @@ const stepMap: Record<string, VisualStep[]> = {
     { icon: Trophy, label: "挑战展示", detail: "讲过程" },
   ],
   systems: [
-    { icon: Monitor, label: "身体", detail: "屏幕/外壳/喇叭" },
-    { icon: Mic, label: "感官", detail: "听见外界" },
-    { icon: Brain, label: "大脑", detail: "判断回答" },
+    { icon: Mic, label: "声音", detail: "听你说话" },
+    { icon: Monitor, label: "画面", detail: "看见东西" },
+    { icon: MessageCircle, label: "文字", detail: "读到内容" },
+    { icon: Brain, label: "任务", detail: "知道目标" },
   ],
   chip: [
     { icon: Mic, label: "输入", detail: "声音进来" },
-    { icon: Cpu, label: "控制", detail: "ESP32-S3 调度" },
+    { icon: Cpu, label: "控制", detail: "程序调度" },
     { icon: Monitor, label: "表现", detail: "屏幕表情" },
     { icon: Volume2, label: "输出", detail: "喇叭说话" },
   ],
@@ -460,23 +459,6 @@ function ImageStory({
   );
 }
 
-function QrBlock({ compact, qrLinks }: { compact?: boolean; qrLinks: QrLink[] }) {
-  if (qrLinks.length === 0) {
-    return null;
-  }
-
-  return (
-    <div className={`grid grid-cols-2 gap-3 ${compact ? "mt-3" : "mt-4"}`}>
-      {qrLinks.map((link) => (
-        <div className="rounded-md bg-white p-3 text-center shadow-sm" key={link.id}>
-          <QRCodeSVG value={link.url} size={compact ? 70 : 96} />
-          <p className="mt-2 text-sm font-black text-slate-900">{link.label}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 export function RobotVisual({
   accent,
   audience = "student",
@@ -485,7 +467,6 @@ export function RobotVisual({
   imageAlt,
   imageFit,
   imageSource,
-  qrLinks = [],
   supportImages = [],
   visual,
 }: RobotVisualProps) {
@@ -518,8 +499,6 @@ export function RobotVisual({
           <FlowCards accent={accent} compact={compact} steps={steps} />
         </div>
       )}
-
-      <QrBlock compact={compact} qrLinks={qrLinks} />
     </div>
   );
 }

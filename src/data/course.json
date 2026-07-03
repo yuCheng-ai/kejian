@@ -1,350 +1,244 @@
 {
   "meta": {
     "title": "OPC 亲子 AI 机器人唤醒营",
-    "subtitle": "2 小时做出你的第一台 AI 桌宠机器人",
+    "subtitle": "2 小时唤醒你的第一台 AI 桌宠机器人",
     "audience": "7-14 岁孩子与家长",
     "durationMinutes": 120,
-    "hardware": "乐鑫 ESP32-S3 AI 机器人开发板",
-    "host": "OPC 社区",
-    "qrLinks": [
-      {
-        "id": "signup",
-        "label": "家长登记入口",
-        "url": "https://example.com/replace-opc-signup",
-        "description": "上线前替换为真实购买表单、微信群或小程序链接"
-      },
-      {
-        "id": "showcase",
-        "label": "作品上传入口",
-        "url": "https://example.com/replace-opc-showcase",
-        "description": "上线前替换为真实作品收集表单或社群相册"
-      }
-    ]
+    "host": "OPC 社区"
   },
   "slides": [
     {
       "id": 1,
-      "title": "准备通关",
-      "subtitle": "坐好、看桌面、先不要插线",
-      "visual": "title",
+      "title": "第 1 关：认识 AI 桌宠",
+      "subtitle": "它会听、会看、会说，还会显示表情",
+      "visual": "systems",
       "accent": "cyan",
-      "timerSeconds": 180,
-      "student": {
-        "headline": "今天你是机器人训练师",
-        "summary": "今天有 8 个小任务。你会一步一步把机器人唤醒。",
-        "bullets": [
-          "坐到自己的组",
-          "拿好任务卡",
-          "先观察不动手"
-        ],
-        "activityTitle": "先做 3 件事",
-        "activitySteps": [
-          "写下姓名和组号",
-          "看一眼桌上的机器人",
-          "想一句想问机器人的话"
-        ],
-        "checkpoint": "你知道今天要按 8 个任务通关。",
-        "callout": "先准备，再动手。"
-      },
-      "teacher": {
-        "estimatedMinutes": 3,
-        "script": [
-          "口令：欢迎来到机器人唤醒营。今天孩子是训练师，先写姓名和组号，等口令再动手。"
-        ],
-        "actions": [
-          "发任务卡",
-          "确认每组材料在桌面",
-          "提醒先不要插线"
-        ],
-        "notes": [
-          "学生屏只讲孩子要做什么",
-          "不讲技术背景，不讲销售"
-        ],
-        "emergency": [
-          "材料没发齐：先写名字候选",
-          "投屏异常：口头开场，直接拿样机"
-        ]
-      },
-      "image": "/visuals/workshop-hero.png",
-      "imageAlt": "孩子和家长在社区课堂中观察 AI 桌宠机器人"
-    },
-    {
-      "id": 2,
-      "title": "看机器人表演一次",
-      "subtitle": "只观察，不操作",
-      "visual": "demo",
-      "accent": "orange",
-      "timerSeconds": 300,
-      "student": {
-        "headline": "找出 3 个变化",
-        "summary": "声音从哪里进？回答从哪里出？表情在哪里变？",
-        "bullets": [
-          "听到声音",
-          "说出回答",
-          "变出表情"
-        ],
-        "activityTitle": "观察任务",
-        "activitySteps": [
-          "看到反应就举手",
-          "说出一个变化",
-          "猜一个正在工作的零件"
-        ],
-        "checkpoint": "你能说出机器人一个输入和一个输出。",
-        "callout": "先看见，再动手。"
-      },
-      "teacher": {
-        "estimatedMinutes": 5,
-        "script": [
-          "口令：大家先不操作，只找 3 个变化：它怎么听、怎么说、表情怎么变。"
-        ],
-        "actions": [
-          "演示唤醒",
-          "演示一句问答",
-          "演示一个表情变化"
-        ],
-        "notes": [
-          "每次演示后停 3 秒",
-          "让孩子先说现象，不急着解释"
-        ],
-        "emergency": [
-          "样机失败：放本地录屏",
-          "环境太吵：让孩子靠近麦克风 30 厘米"
-        ]
-      },
-      "image": "/visuals/materials/material-robot-demo.jpg",
-      "imageAlt": "真实桌宠机器人和履带机器人展示图"
-    },
-    {
-      "id": 3,
-      "title": "今天有 8 个任务",
-      "subtitle": "完成一关，打一个勾",
-      "visual": "mission",
-      "accent": "green",
-      "timerSeconds": 240,
-      "student": {
-        "headline": "听口令，按顺序通关",
-        "summary": "不要抢跑。完成一关，就在任务卡上打勾。",
-        "bullets": [
-          "检查身体",
-          "装入程序",
-          "开机观察",
-          "连接网络",
-          "认识 AI 线索",
-          "起名字",
-          "选性格",
-          "展示作品"
-        ],
-        "activityTitle": "你的通关规则",
-        "activitySteps": [
-          "听到口令再开始",
-          "自己动手完成",
-          "完成后打勾",
-          "失败就举手"
-        ],
-        "checkpoint": "你知道下一关是什么，也知道失败时要举手。",
-        "callout": "不抢跑，不乱点。"
-      },
-      "teacher": {
-        "estimatedMinutes": 4,
-        "script": [
-          "口令：今天有 8 个任务。完成一关打一个勾，没有口令不进入下一关，失败就举手。"
-        ],
-        "actions": [
-          "带读 8 个任务",
-          "强调失败举手",
-          "确认任务卡开始使用"
-        ],
-        "notes": [
-          "删掉家长/助教分工，学生只看自己的规则",
-          "后面混乱时回到这页"
-        ],
-        "emergency": [
-          "分组乱：按座位分组",
-          "年龄小：家长代写，孩子口述"
-        ]
-      }
-    },
-    {
-      "id": 4,
-      "title": "任务 1：检查机器人身体",
-      "subtitle": "找到控制中心、耳朵、眼睛、嘴巴和脸",
-      "visual": "parts",
-      "accent": "cyan",
-      "timerSeconds": 540,
-      "student": {
-        "headline": "把材料排成一行",
-        "summary": "先认识身体，再开始唤醒。不要插线，不要拆别组材料。",
-        "bullets": [
-          "控制中心",
-          "USB 接口",
-          "麦克风",
-          "摄像头",
-          "喇叭",
-          "屏幕"
-        ],
-        "activityTitle": "找一找",
-        "activitySteps": [
-          "把材料排好",
-          "找到 USB 接口",
-          "指出麦克风和摄像头",
-          "指出喇叭和屏幕",
-          "任务卡打勾"
-        ],
-        "checkpoint": "你能指出控制中心、USB 接口、摄像头和屏幕。",
-        "callout": "先会找，再会用。"
-      },
-      "teacher": {
-        "estimatedMinutes": 9,
-        "script": [
-          "口令：现在检查机器人身体。孩子找到控制中心、USB 接口、麦克风、摄像头、喇叭和屏幕，找到后打勾。"
-        ],
-        "actions": [
-          "举起实物板示范",
-          "按清单点名零件",
-          "助教巡视纠正",
-          "缺件组举手"
-        ],
-        "notes": [
-          "学生记“控制中心”，不要求背 ESP32-S3",
-          "摄像头要用“眼睛”这个比喻带一下",
-          "不讲引脚，不让孩子拔插脆弱排线"
-        ],
-        "emergency": [
-          "缺件：助教补发",
-          "找不到接口：家长指认但不代操作",
-          "板子异常：直接换备用"
-        ]
-      },
-      "image": "/visuals/materials/material-board-front.jpg",
-      "imageAlt": "ESP32-S3 开发板实物图",
-      "imageFit": "contain",
-      "supportImages": [
-        {
-          "src": "/visuals/materials/material-board-back.jpg",
-          "label": "外壳背面"
-        },
-        {
-          "src": "/visuals/materials/material-board-front.jpg",
-          "label": "屏幕与接口"
-        },
-        {
-          "src": "/visuals/materials/material-robot-structure.png",
-          "label": "结构拆解"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "任务 2：装入唤醒程序",
-      "subtitle": "点击开始，看到完成后举手",
-      "visual": "chip",
-      "accent": "orange",
       "timerSeconds": 600,
       "student": {
-        "headline": "把程序装进去",
-        "summary": "程序已经准备好。你要做的是检查线、找组号、点开始、等完成。",
+        "headline": "先知道它为什么像小伙伴",
+        "summary": "AI 桌宠不是玩具摆件，它有身体、感官和 AI 大脑。",
         "bullets": [
-          "检查数据线",
-          "找到组号",
-          "点击开始",
-          "看到完成"
+          "身体：屏幕和外壳",
+          "耳朵：麦克风",
+          "眼睛：摄像头",
+          "嘴巴：喇叭"
         ],
-        "activityTitle": "一键装程序",
+        "activityTitle": "科普小任务",
         "activitySteps": [
-          "检查数据线插好",
-          "确认自己的组号",
-          "点击开始",
-          "看到绿色完成后举手"
+          "看老师演示",
+          "说出它怎么听",
+          "说出它怎么看",
+          "说出它怎么回答"
         ],
-        "checkpoint": "你看到完成提示，机器人准备开机。",
-        "callout": "完成前不要乱点。"
+        "checkpoint": "你能说出 AI 桌宠至少 2 个能力。",
+        "callout": "先认识，再训练。"
       },
       "teacher": {
         "estimatedMinutes": 10,
         "script": [
-          "口令：现在装入唤醒程序。孩子确认组号，点击开始，看到绿色完成后举手；失败不要自己乱点。"
+          "口令：今天我们不是只看机器人，而是要把一台 AI 桌宠唤醒、训练成自己的作品。",
+          "演示口令：大家先不操作，只观察它怎么听、怎么看、怎么说、表情怎么变。"
+        ],
+        "actions": [
+          "发任务卡",
+          "演示一次唤醒和一句问答",
+          "让孩子说出现象，不讲复杂原理",
+          "提醒先不要插线"
+        ],
+        "notes": [
+          "科普控制在 10 分钟内",
+          "只讲身体、感官、AI 大脑三个词",
+          "不要讲芯片型号和技术细节"
+        ],
+        "emergency": [
+          "样机失败：放本地录屏",
+          "孩子太兴奋：回到规则，听口令再动手",
+          "低龄孩子听不懂：只讲耳朵、眼睛、嘴巴"
+        ]
+      },
+      "image": "/visuals/materials/real-device-hero.png",
+      "imageAlt": "白色 AI 桌宠实物图",
+      "imageFit": "contain"
+    },
+    {
+      "id": 2,
+      "title": "第 2 关：观察真实物料",
+      "subtitle": "找到屏幕、摄像头、麦克风、喇叭和接口",
+      "visual": "parts",
+      "accent": "green",
+      "timerSeconds": 720,
+      "student": {
+        "headline": "把桌宠拆成几个能看懂的部分",
+        "summary": "先观察，再动手。找到每个部分，后面才知道哪里不能乱碰。",
+        "bullets": [
+          "屏幕",
+          "摄像头",
+          "麦克风",
+          "喇叭",
+          "Type-C 接口",
+          "外壳"
+        ],
+        "activityTitle": "观察清单",
+        "activitySteps": [
+          "把材料排整齐",
+          "找到摄像头和屏幕",
+          "找到喇叭孔和麦克风",
+          "找到 Type-C 接口"
+        ],
+        "checkpoint": "你能指出至少 4 个真实部件。",
+        "callout": "先观察，再上手。"
+      },
+      "teacher": {
+        "estimatedMinutes": 12,
+        "script": [
+          "口令：现在观察真实物料。孩子只指认，不拔线、不拆壳、不插电。"
+        ],
+        "actions": [
+          "举起实物示范",
+          "按屏幕、摄像头、麦克风、喇叭、接口顺序点名",
+          "助教巡视纠正",
+          "缺件组举手"
+        ],
+        "notes": [
+          "学生记功能词，不背型号",
+          "摄像头和麦克风用眼睛耳朵比喻",
+          "家长可以指认，但不代替孩子操作"
+        ],
+        "emergency": [
+          "缺件：助教补发",
+          "孩子拔线：立即停手复位",
+          "材料混组：按组号重新核对"
+        ]
+      },
+      "image": "/visuals/materials/real-parts-kit.png",
+      "imageAlt": "AI 桌宠外壳、屏幕、控制板和线材物料图",
+      "imageFit": "contain",
+      "supportImages": [
+        {
+          "src": "/visuals/materials/real-product-gallery.png",
+          "label": "实物展示"
+        },
+        {
+          "src": "/visuals/materials/real-board-annotated.png",
+          "label": "部件标注"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "第 3 关：准备烧录",
+      "subtitle": "确认组号、接口和数据线，等老师口令",
+      "visual": "chip",
+      "accent": "orange",
+      "timerSeconds": 480,
+      "student": {
+        "headline": "先准备好，别急着点开始",
+        "summary": "烧录是把唤醒程序装进机器人。跟着老师做，失败就举手。",
+        "bullets": [
+          "确认组号",
+          "检查数据线",
+          "找到 Type-C",
+          "等老师口令"
+        ],
+        "activityTitle": "准备动作",
+        "activitySteps": [
+          "确认自己的组号",
+          "检查数据线插好",
+          "找到老师指定页面",
+          "手离开鼠标等口令"
+        ],
+        "checkpoint": "你准备好了数据线、组号和接口。",
+        "callout": "先准备，再烧录。"
+      },
+      "teacher": {
+        "estimatedMinutes": 8,
+        "script": [
+          "口令：烧录就是把唤醒程序装进机器人。现在只准备，不抢跑，等老师说开始。"
         ],
         "actions": [
           "打开一键烧录工具",
-          "按组号分批烧录",
-          "成功组在白板打勾",
-          "失败组交给助教"
+          "按组号或座位分批",
+          "确认数据线是可传输线",
+          "白板写失败举手规则"
         ],
         "notes": [
-          "学生屏不出现“固件”",
-          "不讲驱动、串口、编译",
-          "失败超过 2 分钟换线或换设备"
+          "学生屏可以说烧录，但不讲驱动、串口、编译",
+          "不要让全场同时乱点",
+          "低龄组由家长扶线，孩子点击"
         ],
         "emergency": [
-          "识别不到：换线/换 USB 口",
-          "烧录失败：重试一次后换备用板",
-          "排队过长：老师统一烧录，孩子继续写名字候选"
+          "识别不到：换线或换 USB 口",
+          "电脑少：老师统一烧录",
+          "等待组：继续填写名字候选"
         ]
       },
-      "image": "/visuals/materials/material-board-front.jpg",
-      "imageAlt": "一键烧录唤醒程序到 ESP32-S3 控制中心",
+      "image": "/visuals/materials/real-device-wireless.png",
+      "imageAlt": "AI 桌宠连接能力示意图",
       "imageFit": "contain"
     },
     {
-      "id": 6,
-      "title": "任务 3：第一次开机",
-      "subtitle": "插线后先等 3 秒",
+      "id": 4,
+      "title": "第 4 关：装入程序并唤醒",
+      "subtitle": "看到完成，再插线开机，等 3 秒",
       "visual": "power",
       "accent": "yellow",
-      "timerSeconds": 420,
+      "timerSeconds": 900,
       "student": {
-        "headline": "看它有没有醒来",
-        "summary": "先看亮灯、屏幕或提示音。不要连续按按钮。",
+        "headline": "让它第一次醒来",
+        "summary": "点击开始后安静等待。完成后插线开机，看它出现第一个反应。",
         "bullets": [
-          "插线",
-          "看灯",
-          "看屏幕",
-          "等 3 秒"
+          "点击开始",
+          "看到完成",
+          "插线开机",
+          "记录变化"
         ],
-        "activityTitle": "开机四步",
+        "activityTitle": "唤醒步骤",
         "activitySteps": [
-          "孩子插线",
-          "家长扶住板子",
-          "等 3 秒",
+          "点击开始",
+          "看到完成后举手",
+          "插线后等 3 秒",
           "写下第一个变化"
         ],
         "checkpoint": "机器人出现亮灯、屏幕、提示音或启动画面。",
-        "callout": "先观察，不急着按。"
+        "callout": "今天第一次醒来。"
       },
       "teacher": {
-        "estimatedMinutes": 7,
+        "estimatedMinutes": 15,
         "script": [
-          "口令：现在第一次开机。插线后先等 3 秒，只看灯、屏幕和声音，不要连续按按钮。"
+          "口令：现在开始装入唤醒程序。看到绿色完成后举手，失败不要自己反复点。",
+          "口令：成功组第一次开机。插线后等 3 秒，只看灯、屏幕和声音。"
         ],
         "actions": [
-          "统一口令插线",
-          "成功组安静举手",
-          "家长拍开机画面"
+          "分批点击烧录",
+          "成功组白板打勾",
+          "统一口令插线开机",
+          "让孩子写下第一个变化"
         ],
         "notes": [
-          "用“醒来”替代工程解释",
-          "助教巡查插口方向"
+          "这是第一个高潮点，节奏要稳",
+          "失败组快速换线或换备用板",
+          "不让孩子连续按按钮"
         ],
         "emergency": [
-          "无反应：换线/换 USB 口",
+          "烧录失败：重试一次后换备用板",
           "反复重启：换电源",
-          "发热异常：断电换设备"
+          "发热异常：立即断电换设备"
         ]
       },
-      "image": "/visuals/materials/material-board-front.jpg",
-      "imageAlt": "开发板正面实物图",
+      "image": "/visuals/materials/real-device-hero.png",
+      "imageAlt": "AI 桌宠实物亮屏图",
       "imageFit": "contain"
     },
     {
-      "id": 7,
-      "title": "任务 4：连接网络",
-      "subtitle": "成功后只说一句短话",
+      "id": 5,
+      "title": "第 5 关：第一次对话",
+      "subtitle": "联网后只说一句短话",
       "visual": "cloud",
       "accent": "green",
       "timerSeconds": 720,
       "student": {
-        "headline": "让机器人第一次回答你",
-        "summary": "连接成功后，说：你好，请介绍自己。",
+        "headline": "让它回答你一句话",
+        "summary": "连接成功后，说：你好，请介绍自己。听到回答后记一个关键词。",
         "bullets": [
           "连上网络",
           "等提示",
@@ -353,8 +247,8 @@
         ],
         "activityTitle": "第一次问候",
         "activitySteps": [
-          "确认组号和设备编号",
-          "按步骤连接",
+          "确认网络连接",
+          "等待老师点名测试",
           "说：你好，请介绍自己",
           "写下一个关键词"
         ],
@@ -368,351 +262,233 @@
         ],
         "actions": [
           "公布 Wi-Fi/热点",
-          "分批测试语音",
+          "每批 3-5 组测试语音",
           "白板记录成功组",
           "失败组交给助教"
         ],
         "notes": [
           "不要全场同时喊",
-          "短句测试，别连续追问"
+          "只记录关键词，不要求完整抄回答",
+          "网络拥堵时切备用热点"
         ],
         "emergency": [
           "连接超时：重启设备",
           "认证失败：核对密码",
-          "网络拥堵：每批 3-5 组"
+          "环境太吵：让孩子靠近麦克风 30 厘米"
         ]
       },
-      "image": "/visuals/robot-demo.png",
-      "imageAlt": "AI 桌宠机器人连接云端 AI 大脑"
+      "image": "/visuals/materials/real-device-wireless.png",
+      "imageAlt": "AI 桌宠无线连接示意图",
+      "imageFit": "contain"
     },
     {
-      "id": 8,
-      "title": "任务 5：给 AI 大脑线索",
-      "subtitle": "线索越多，回答越聪明",
-      "visual": "systems",
-      "accent": "cyan",
-      "timerSeconds": 360,
-      "student": {
-        "headline": "机器人会看 4 种线索",
-        "summary": "耳朵听你说话，眼睛看画面，小纸条读文字，任务卡告诉它现在要做什么。",
-        "bullets": [
-          "耳朵：麦克风听声音",
-          "眼睛：摄像头看画面",
-          "小纸条：读文字",
-          "任务卡：记任务"
-        ],
-        "activityTitle": "想一想",
-        "activitySteps": [
-          "只听声音能知道什么",
-          "如果能看见你，会多知道什么",
-          "如果有任务卡，会怎么回答",
-          "说出一个升级想法"
-        ],
-        "checkpoint": "你知道机器人可以用声音、画面、文字和任务一起思考。",
-        "callout": "多给线索，回答更准。"
-      },
-      "teacher": {
-        "estimatedMinutes": 6,
-        "script": [
-          "口令：AI 大脑不是只听一句话。麦克风像耳朵，摄像头像眼睛，它还可以读文字、记任务。线索越多，回答越聪明。"
-        ],
-        "actions": [
-          "指投屏四个线索",
-          "问孩子：如果机器人能看见你，还能做什么",
-          "收 2 个回答进入下一页"
-        ],
-        "notes": [
-          "学生屏不解释“多模态不是一个功能”",
-          "不讲 Transformer、embedding、VLM",
-          "摄像头和眼睛要对应起来讲"
-        ],
-        "emergency": [
-          "听不懂：只讲耳朵、眼睛、小纸条、任务卡",
-          "时间不足：一句话带过，直接进入命名"
-        ]
-      },
-      "image": "/visuals/materials/material-robot-structure.png",
-      "imageAlt": "多模态 AI 大脑接收声音、画面、文字和任务信息"
-    },
-    {
-      "id": 9,
-      "title": "任务 6：给它起名字",
+      "id": 6,
+      "title": "第 6 关：给它起名字",
       "subtitle": "名字短一点，叫起来清楚一点",
       "visual": "name",
       "accent": "orange",
-      "timerSeconds": 360,
+      "timerSeconds": 480,
       "student": {
         "headline": "它叫什么，由你决定",
-        "summary": "写 3 个名字，选一个最喜欢的，贴到任务卡上。",
+        "summary": "名字让机器人从设备变成你的作品。先写 3 个，再选 1 个。",
         "bullets": [
           "2-4 个字",
           "容易叫",
-          "有特点"
+          "有特点",
+          "贴到任务卡"
         ],
-        "activityTitle": "命名仪式",
+        "activityTitle": "命名步骤",
         "activitySteps": [
           "写下 3 个候选名字",
           "选出最终名字",
-          "对机器人说出名字",
-          "贴到任务卡上"
+          "贴到任务卡上",
+          "对机器人说出它的新名字"
         ],
         "checkpoint": "你的机器人有了名字。",
-        "callout": "名字就是它的身份。"
+        "callout": "名字就是身份。"
       },
       "teacher": {
-        "estimatedMinutes": 6,
+        "estimatedMinutes": 8,
         "script": [
-          "口令：现在给机器人起名字。写 3 个候选名，选一个最喜欢的，贴到任务卡上。"
+          "口令：现在给机器人起名字。名字短一点、清楚一点，写 3 个候选名，再选一个最喜欢的。"
         ],
         "actions": [
           "计时 2 分钟",
           "邀请 2-3 组分享",
+          "提醒贴到任务卡",
           "家长拍任务卡"
         ],
         "notes": [
-          "名字短、清楚、友善",
-          "不要争论太久"
+          "名字友善，不争论太久",
+          "孩子不会写时家长代写，孩子口述",
+          "重名不强制改"
         ],
         "emergency": [
-          "选择困难：颜色+动物/性格+小名",
-          "重名不强制改"
+          "选择困难：颜色+性格+小名",
+          "孩子跑题：给 30 秒最终选择",
+          "时间不足：只写最终名字"
         ]
-      }
+      },
+      "image": "/visuals/materials/real-device-hero.png",
+      "imageAlt": "AI 桌宠实物图",
+      "imageFit": "contain"
     },
     {
-      "id": 10,
-      "title": "任务 7：选择性格",
-      "subtitle": "让机器人换一种说话方式",
+      "id": 7,
+      "title": "第 7 关：选择性格和任务",
+      "subtitle": "选一个性格，完成一个稳定小任务",
       "visual": "personality",
       "accent": "red",
-      "timerSeconds": 360,
+      "timerSeconds": 780,
       "student": {
-        "headline": "选一张性格卡",
-        "summary": "选一个你喜欢的说话风格，再让机器人介绍自己。",
+        "headline": "让它用你的风格说话",
+        "summary": "选一个性格，再给它一个小任务。成功一次就可以展示。",
         "bullets": [
           "探险家",
           "小老师",
-          "守护者"
+          "守护者",
+          "生活助手"
         ],
-        "activityTitle": "性格选择",
+        "activityTitle": "训练步骤",
         "activitySteps": [
-          "选一张性格卡",
-          "说一个使用场景",
-          "让机器人自我介绍",
-          "写下喜欢的一句话"
+          "选择一个性格",
+          "选择一个小任务",
+          "让机器人回答一次",
+          "写下最喜欢的一句话"
         ],
-        "checkpoint": "机器人用新性格介绍了自己。",
-        "callout": "性格会改变说话风格。"
-      },
-      "teacher": {
-        "estimatedMinutes": 6,
-        "script": [
-          "口令：现在选性格。探险家、小老师、守护者，选一个，再让机器人用这个风格介绍自己。"
-        ],
-        "actions": [
-          "展示三张性格卡",
-          "孩子选择",
-          "测试一句自我介绍"
-        ],
-        "notes": [
-          "不讲提示词工程",
-          "只让孩子感受风格变化"
-        ],
-        "emergency": [
-          "不生效：重新输入短提示",
-          "回答太长：要求 20 字以内"
-        ]
-      }
-    },
-    {
-      "id": 11,
-      "title": "任务 8：三次提问挑战",
-      "subtitle": "每次只改一句话",
-      "visual": "challenge",
-      "accent": "yellow",
-      "timerSeconds": 780,
-      "student": {
-        "headline": "选一个挑战来完成",
-        "summary": "第一次直接问，第二次改一句，第三次加名字和性格。",
-        "bullets": [
-          "介绍自己",
-          "讲小知识",
-          "安慰朋友",
-          "设计家庭任务"
-        ],
-        "activityTitle": "三次提问",
-        "activitySteps": [
-          "第一次：直接提问",
-          "第二次：改得更清楚",
-          "第三次：加名字和性格",
-          "圈出最好的一次"
-        ],
-        "checkpoint": "你能说出：我改了哪一句话。",
-        "callout": "会改问题，才会用 AI。"
+        "checkpoint": "机器人能用新性格完成一个小任务。",
+        "callout": "稳定完成一次。"
       },
       "teacher": {
         "estimatedMinutes": 13,
         "script": [
-          "口令：每组选一个挑战，问三次。重点不是一次成功，而是说清楚：我改了哪一句话。"
+          "口令：我们不做比赛，每组只选一个稳定小任务。重点是让机器人用你的性格完成一次回答。"
         ],
         "actions": [
-          "每组选一个挑战",
-          "巡场问：你改了哪一句",
+          "展示三张性格卡",
+          "给 4 个稳定任务：介绍自己、讲小知识、英语跟读、睡前提醒",
+          "巡场帮孩子把问题说短",
           "记录适合展示的小组"
         ],
         "notes": [
-          "用“改了哪一句”替代“改进点”",
-          "控制噪声，必要时分区测试"
+          "不做现场比赛，降低网络和噪声风险",
+          "回答太长时要求 20 字以内",
+          "失败组展示任务卡和修改后的问题也算完成"
         ],
         "emergency": [
           "联网波动：展示预设回答",
-          "时间不足：只做介绍自己",
-          "孩子紧张：家长举设备"
+          "孩子紧张：家长举设备，孩子读任务卡",
+          "时间不足：只做介绍自己"
         ]
-      }
+      },
+      "image": "/visuals/materials/real-device-hero.png",
+      "imageAlt": "AI 桌宠实物图",
+      "imageFit": "contain"
     },
     {
-      "id": 12,
-      "title": "作品展示",
-      "subtitle": "说清楚 4 件事",
+      "id": 8,
+      "title": "第 8 关：选择 3D 打印外观",
+      "subtitle": "给桌宠选颜色、耳朵、支架和名字牌",
       "visual": "showcase",
       "accent": "cyan",
-      "timerSeconds": 480,
+      "timerSeconds": 600,
       "student": {
-        "headline": "60 秒介绍你的机器人",
-        "summary": "不用追求完美。把过程讲清楚，就是完成展示。",
+        "headline": "设计它的外观方案",
+        "summary": "现场先选方案，后续可以打印外壳、名字牌和小配件。",
+        "bullets": [
+          "外壳颜色",
+          "耳朵形状",
+          "支架样式",
+          "名字牌"
+        ],
+        "activityTitle": "外观选择",
+        "activitySteps": [
+          "选一个外壳颜色",
+          "选一个耳朵或支架",
+          "写下名字牌文字",
+          "在任务卡上打勾"
+        ],
+        "checkpoint": "你完成了自己的 3D 打印外观方案。",
+        "callout": "让它长得像你的作品。"
+      },
+      "teacher": {
+        "estimatedMinutes": 10,
+        "script": [
+          "口令：现在给桌宠选外观。现场先选方案，不排队等打印；打印和领取按现场安排。"
+        ],
+        "actions": [
+          "展示 3D 打印外壳样件或图片",
+          "让孩子选择颜色、耳朵、支架、名字牌",
+          "家长拍任务卡",
+          "说明后续打印/领取方式"
+        ],
+        "notes": [
+          "这是卖点，但学生屏不出现价格",
+          "避免承诺现场每人立即打印",
+          "外观选择要落到任务卡，方便后续交付"
+        ],
+        "emergency": [
+          "没有样件：展示 PDF 物料和外壳图",
+          "孩子选择太慢：提供 3 个默认方案",
+          "家长问价格：引导到服务台"
+        ]
+      },
+      "image": "/visuals/materials/real-parts-kit.png",
+      "imageAlt": "AI 桌宠外壳、支架和控制板物料图",
+      "imageFit": "contain"
+    },
+    {
+      "id": 9,
+      "title": "第 9 关：展示和领奖",
+      "subtitle": "60 秒介绍你的 AI 桌宠",
+      "visual": "home",
+      "accent": "green",
+      "timerSeconds": 780,
+      "student": {
+        "headline": "带走证书、任务卡和新想法",
+        "summary": "把过程讲清楚，就是完成作品展示。",
         "bullets": [
           "它叫什么",
           "它是什么性格",
-          "它完成了什么",
-          "我改了哪一句"
+          "它完成了什么任务",
+          "它选了什么外观"
         ],
         "activityTitle": "展示顺序",
         "activitySteps": [
           "介绍名字",
           "介绍性格",
-          "让机器人互动一句",
-          "说：我改了哪一句"
+          "说完成的任务",
+          "说外观方案"
         ],
-        "checkpoint": "你完成了一次作品展示。",
-        "callout": "把过程讲出来。"
-      },
-      "teacher": {
-        "estimatedMinutes": 8,
-        "script": [
-          "口令：现在作品展示。每组 60 秒，说四件事：名字、性格、完成了什么、我改了哪一句。"
-        ],
-        "actions": [
-          "邀请 4-6 组",
-          "每组 60 秒",
-          "每组给一句具体反馈"
-        ],
-        "notes": [
-          "不只选成功组",
-          "失败也可以讲过程"
-        ],
-        "emergency": [
-          "设备失败：展示任务卡",
-          "时间不足：每组只说名字和性格"
-        ]
-      }
-    },
-    {
-      "id": 13,
-      "title": "回家继续升级",
-      "subtitle": "给机器人一个新任务",
-      "visual": "home",
-      "accent": "green",
-      "timerSeconds": 360,
-      "student": {
-        "headline": "下次让它更厉害",
-        "summary": "回家后可以继续设计：新表情、新问题、新任务。",
-        "bullets": [
-          "讲故事",
-          "练英语",
-          "提醒学习",
-          "播报天气",
-          "家庭小助手"
-        ],
-        "activityTitle": "回家挑战",
-        "activitySteps": [
-          "每天问一个新问题",
-          "记录一句有趣回答",
-          "设计一个家庭任务",
-          "下次带作品来展示"
-        ],
-        "checkpoint": "你知道下次想升级什么能力。",
-        "callout": "今天唤醒，回家升级。"
-      },
-      "teacher": {
-        "estimatedMinutes": 6,
-        "script": [
-          "口令：今天只是第一次唤醒。请孩子说一个回家后最想让机器人做的新任务。"
-        ],
-        "actions": [
-          "让孩子说一个想升级的能力",
-          "展示后续方向",
-          "引导家长看说明页"
-        ],
-        "notes": [
-          "学生屏只讲回家挑战",
-          "家长价值说明放老师口头和家长页"
-        ],
-        "emergency": [
-          "家长问价格：引导到最后登记",
-          "孩子兴奋：安排合影"
-        ]
-      }
-    },
-    {
-      "id": 14,
-      "title": "合影、领奖、带走任务卡",
-      "subtitle": "今天任务完成",
-      "visual": "home",
-      "accent": "orange",
-      "timerSeconds": 300,
-      "student": {
-        "headline": "你完成了机器人训练师任务",
-        "summary": "拿好任务卡，和机器人合影。回家继续升级。",
-        "bullets": [
-          "合影",
-          "领证书",
-          "带任务卡",
-          "回家挑战"
-        ],
-        "activityTitle": "结束动作",
-        "activitySteps": [
-          "和机器人合影",
-          "领取训练师证书",
-          "带走任务卡",
-          "告诉家长你想升级什么"
-        ],
-        "checkpoint": "你带走了证书、任务卡和下次升级想法。",
+        "checkpoint": "你完成了作品展示，并带走证书和任务卡。",
         "callout": "今天通关完成。"
       },
       "teacher": {
-        "estimatedMinutes": 5,
+        "estimatedMinutes": 13,
         "script": [
-          "口令：孩子合影领奖，带走任务卡。家长需要资料和后续安排的，扫家长登记入口。"
+          "口令：现在作品展示。每组 60 秒，说四件事：名字、性格、完成的任务、选择的外观。",
+          "口令：孩子合影领奖，带走任务卡。家长需要资料和后续安排的，请到现场服务台填写信息。"
         ],
         "actions": [
-          "展示登记二维码",
-          "发证书",
-          "助教答疑",
-          "提醒带走任务卡和说明页"
+          "邀请 4-6 组展示",
+          "每组给一句具体反馈",
+          "发证书并安排合影",
+          "引导家长到现场服务台填表"
         ],
         "notes": [
-          "学生屏不出现家长登记",
-          "家长沟通聚焦学习路径和后续服务"
+          "不只选成功组，失败也可以讲过程",
+          "学生屏不出现购买和登记信息",
+          "家长价值说明放老师口头和家长页"
         ],
         "emergency": [
-          "二维码打不开：给短链/微信群",
-          "咨询排队：先登记后联系",
-          "价格未定：只收意向登记"
+          "设备失败：展示任务卡",
+          "咨询排队：先填纸质表，活动后联系",
+          "信息不全：留下家长姓名和手机号"
         ]
       },
-      "image": "/visuals/home-upgrade.png",
-      "imageAlt": "孩子和家长在家中继续升级 AI 桌宠机器人"
+      "image": "/visuals/materials/real-product-gallery.png",
+      "imageAlt": "AI 桌宠产品展示图",
+      "imageFit": "contain"
     }
   ]
 }

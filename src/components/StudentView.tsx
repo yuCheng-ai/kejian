@@ -1,16 +1,21 @@
 import { SlideCanvas } from "./SlideCanvas";
-import type { CourseData, CourseSlide } from "../types";
+import type { CourseSlide } from "../types";
 
 interface StudentViewProps {
-  course: CourseData;
+  allSlides: CourseSlide[];
   slide: CourseSlide;
   totalSlides: number;
 }
 
-export function StudentView({ course, slide, totalSlides }: StudentViewProps) {
+export function StudentView({ allSlides, slide, totalSlides }: StudentViewProps) {
   return (
     <div className="screen-only">
-      <SlideCanvas audience="student" course={course} slide={slide} totalSlides={totalSlides} />
+      <SlideCanvas
+        allSlides={allSlides}
+        audience="student"
+        slide={slide}
+        totalSlides={totalSlides}
+      />
     </div>
   );
 }

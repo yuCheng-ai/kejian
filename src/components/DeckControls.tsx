@@ -8,7 +8,6 @@ import {
   Play,
   Presentation,
   Printer,
-  QrCode,
   RotateCcw,
   Wifi,
   WifiOff,
@@ -31,7 +30,6 @@ interface DeckControlsProps {
   onNext: () => void;
   onPrevious: () => void;
   onPrint: (kind: PrintKind) => void;
-  onQrPage: () => void;
   onResetTimer: () => void;
   onToggleFullscreen: () => void;
   onToggleTimer: () => void;
@@ -49,7 +47,6 @@ export function DeckControls({
   onNext,
   onPrevious,
   onPrint,
-  onQrPage,
   onResetTimer,
   onToggleFullscreen,
   onToggleTimer,
@@ -164,10 +161,6 @@ export function DeckControls({
         </div>
 
         <div className="flex items-center gap-2">
-          <button className="command-button" onClick={onQrPage} type="button">
-            <QrCode aria-hidden="true" size={18} />
-            二维码
-          </button>
           <select
             aria-label="选择打印资料"
             className="print-select"
@@ -185,7 +178,6 @@ export function DeckControls({
             </option>
             <option value="tasks">学生任务卡</option>
             <option value="parents">家长说明页</option>
-            <option value="purchase">购买页</option>
             <option value="certificate">证书</option>
           </select>
           <button

@@ -1,15 +1,8 @@
 export type ViewMode = "student" | "teacher";
 
-export type PrintKind = "tasks" | "parents" | "purchase" | "certificate";
+export type PrintKind = "tasks" | "parents" | "certificate";
 
 export type SyncStatus = "connecting" | "connected" | "disconnected";
-
-export interface QrLink {
-  id: string;
-  label: string;
-  url: string;
-  description: string;
-}
 
 export interface SlideStudentContent {
   headline: string;
@@ -55,9 +48,7 @@ export interface CourseData {
     subtitle: string;
     audience: string;
     durationMinutes: number;
-    hardware: string;
     host: string;
-    qrLinks: QrLink[];
   };
   slides: CourseSlide[];
 }
@@ -74,25 +65,12 @@ export interface ParentGuideSection {
   items: string[];
 }
 
-export interface PurchaseItem {
-  name: string;
-  fit: string;
-  includes: string[];
-  nextStep: string;
-}
-
 export interface PrintablesData {
   taskCards: TaskCard[];
   parentGuide: {
     title: string;
     intro: string;
     sections: ParentGuideSection[];
-  };
-  purchasePage: {
-    title: string;
-    intro: string;
-    items: PurchaseItem[];
-    promise: string[];
   };
   certificate: {
     title: string;
